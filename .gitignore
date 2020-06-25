@@ -1,4 +1,6 @@
+*.Rproj
 *~
 .*.kate-swp
 .*.swp
+.Rproj.user
 .idea/
