@@ -14,8 +14,10 @@ outputs:
 steps:
   seurat_to_mtx:
     run: steps/seurat_to_mtx.cwl
-    in: rdata_file
-    out: [mtx_file, row_list_file, col_list_file]
+    in:
+      rdata_file:
+        source: rdata_file
+    out: [mtx_file, barcodes_file, genes_file]
 
   mtx_to_anndata:
     run: steps/mtx_to_anndata.cwl
