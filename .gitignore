@@ -1,4 +1,7 @@
 *.Rproj
+*.h5ad
+*.mtx
+*.txt
 *~
 .*.kate-swp
 .*.swp
