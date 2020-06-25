@@ -9,7 +9,7 @@ import scipy.sparse
 
 def convert(matrix_file: Path, barcodes_file: Path, genes_file: Path):
     with open(barcodes_file) as f:
-        barcodes = [line.strip().split('_')[1] for line in f]
+        barcodes = [line.strip() for line in f]
     with open(genes_file) as f:
         genes = [line.strip() for line in f]
     matrix = scipy.io.mmread(matrix_file).T.tocsr()
