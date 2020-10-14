@@ -6,18 +6,22 @@ requirements:
     dockerImageId: mruffalo/mtx_to_anndata
 
 inputs:
-  mtx_file:
+  rdata_file:
     type: File
     inputBinding:
       position: 0
-  barcodes_file:
+  mtx_file:
     type: File
     inputBinding:
       position: 1
-  genes_file:
+  barcodes_file:
     type: File
     inputBinding:
       position: 2
+  genes_file:
+    type: File
+    inputBinding:
+      position: 3
 
 outputs:
   anndata_file:

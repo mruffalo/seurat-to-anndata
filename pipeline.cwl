@@ -22,6 +22,8 @@ steps:
   mtx_to_anndata:
     run: steps/mtx_to_anndata.cwl
     in:
+      rdata_file:
+        source: rdata_file
       mtx_file:
         source: seurat_to_mtx/mtx_file
       barcodes_file:
